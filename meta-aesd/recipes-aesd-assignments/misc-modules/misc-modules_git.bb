@@ -9,7 +9,7 @@ SRC_URI += "file://misc-modules-init"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "5c3cae6ddc96b8645dfa6f6bc4ddbba08aae8789"
+SRCREV = "0c42f48c2f1f3b6dd6433d24a33ad8b9fd07e0c8"
 
 S = "${WORKDIR}/git/misc-modules"
 
