@@ -13,11 +13,11 @@ case "$1" in
         echo "Loading misc-modules"
         modprobe hello || insmod /lib/modules/$(uname -r)/hello.ko
         # For faulty module, use insmod if CONFIG_MD_FAULTY is built-in
-        insmod /lib/modules/$(uname -r)/faulty.ko || true
+        insmod /lib/modules/$(uname -r)/aesd-faulty.ko || true
         ;;
     stop)
         echo "Unloading misc-modules"
-        rmmod faulty || true
+        rmmod aesd-faulty || true
         rmmod hello || true
         ;;
     *)

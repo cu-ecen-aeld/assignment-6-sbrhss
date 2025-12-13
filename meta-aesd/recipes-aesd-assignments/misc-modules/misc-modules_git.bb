@@ -9,7 +9,7 @@ SRC_URI += "file://misc-modules-init"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "0c42f48c2f1f3b6dd6433d24a33ad8b9fd07e0c8"
+SRCREV = "b9a8acb9506044ada7e88f1f562f695ccb9d59c8"
 
 S = "${WORKDIR}/git/misc-modules"
 
@@ -33,5 +33,5 @@ do_install () {
         install -d ${D}${base_libdir}/modules/${KERNEL_VERSION}/
         install -m 0755 ${WORKDIR}/misc-modules-init ${D}${sysconfdir}/init.d
         install -m 0755 ${S}/hello.ko ${D}${base_libdir}/modules/${KERNEL_VERSION}/
-        install -m 0755 ${S}/faulty.ko ${D}${base_libdir}/modules/${KERNEL_VERSION}/
+        install -m 0755 ${S}/aesd-faulty.ko ${D}${base_libdir}/modules/${KERNEL_VERSION}/
 }

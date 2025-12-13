@@ -9,7 +9,7 @@ SRC_URI += "file://scull-init"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "5c3cae6ddc96b8645dfa6f6bc4ddbba08aae8789"
+SRCREV = "b9a8acb9506044ada7e88f1f562f695ccb9d59c8"
 
 S = "${WORKDIR}/git/scull"
 
